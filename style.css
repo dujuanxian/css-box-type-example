@@ -1,0 +1,32 @@
+p {
+  color: saddlebrown;
+  font-size: 24px;
+}
+
+.parent {
+  border: 2px solid blueviolet;
+  background: palevioletred;
+  margin-bottom: 20px;
+}
+
+.child {
+  color: white;
+  font-size: 18px;
+  border: 2px solid black;
+  background: darkcyan;
+  margin: 10px;
+}
+
+.parent2 .child {
+  display: inline;
+}
+
+.parent3 .child {
+  display: inline-block;
+}
+
+.parent2 .child:nth-child(3),
+.parent3 .child:nth-child(3) {
+  width: 100px;
+  height: 100px;
+}
